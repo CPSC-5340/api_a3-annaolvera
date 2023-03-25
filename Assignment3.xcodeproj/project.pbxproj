@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA428B2429CE88F3008EAF45 /* CampgroundsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA428B2329CE88F3008EAF45 /* CampgroundsModel.swift */; };
+		AA428B2729CE8CF6008EAF45 /* CampgroundImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA428B2629CE8CF6008EAF45 /* CampgroundImageModel.swift */; };
+		AA428B2929CE8FFF008EAF45 /* CampgroundDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA428B2829CE8FFF008EAF45 /* CampgroundDetail.swift */; };
+		AA428B2B29CE92A1008EAF45 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA428B2A29CE92A1008EAF45 /* MapView.swift */; };
+		AA428B2D29CE94F4008EAF45 /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA428B2C29CE94F4008EAF45 /* ImageCardView.swift */; };
 		ACF5E04029BE957F00DD981A /* Assignment3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E03F29BE957F00DD981A /* Assignment3App.swift */; };
-		ACF5E04229BE957F00DD981A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E04129BE957F00DD981A /* ContentView.swift */; };
+		ACF5E04229BE957F00DD981A /* Campgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E04129BE957F00DD981A /* Campgrounds.swift */; };
 		ACF5E04429BE958000DD981A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF5E04329BE958000DD981A /* Assets.xcassets */; };
 		ACF5E04729BE958000DD981A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF5E04629BE958000DD981A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA428B2329CE88F3008EAF45 /* CampgroundsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampgroundsModel.swift; sourceTree = "<group>"; };
+		AA428B2629CE8CF6008EAF45 /* CampgroundImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampgroundImageModel.swift; sourceTree = "<group>"; };
+		AA428B2829CE8FFF008EAF45 /* CampgroundDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampgroundDetail.swift; sourceTree = "<group>"; };
+		AA428B2A29CE92A1008EAF45 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AA428B2C29CE94F4008EAF45 /* ImageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
 		ACF5E03C29BE957F00DD981A /* Assignment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF5E03F29BE957F00DD981A /* Assignment3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment3App.swift; sourceTree = "<group>"; };
-		ACF5E04129BE957F00DD981A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACF5E04129BE957F00DD981A /* Campgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campgrounds.swift; sourceTree = "<group>"; };
 		ACF5E04329BE958000DD981A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACF5E04629BE958000DD981A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +42,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA428B2229CE88B4008EAF45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACF5E04129BE957F00DD981A /* Campgrounds.swift */,
+				AA428B2829CE8FFF008EAF45 /* CampgroundDetail.swift */,
+				AA428B2A29CE92A1008EAF45 /* MapView.swift */,
+				AA428B2C29CE94F4008EAF45 /* ImageCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA428B2529CE8904008EAF45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA428B2329CE88F3008EAF45 /* CampgroundsModel.swift */,
+				AA428B2629CE8CF6008EAF45 /* CampgroundImageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ACF5E03329BE957F00DD981A = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				ACF5E03F29BE957F00DD981A /* Assignment3App.swift */,
-				ACF5E04129BE957F00DD981A /* ContentView.swift */,
+				AA428B2529CE8904008EAF45 /* Models */,
+				AA428B2229CE88B4008EAF45 /* Views */,
 				ACF5E04329BE958000DD981A /* Assets.xcassets */,
 				ACF5E04529BE958000DD981A /* Preview Content */,
 			);
@@ -137,7 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF5E04229BE957F00DD981A /* ContentView.swift in Sources */,
+				AA428B2D29CE94F4008EAF45 /* ImageCardView.swift in Sources */,
+				AA428B2429CE88F3008EAF45 /* CampgroundsModel.swift in Sources */,
+				AA428B2B29CE92A1008EAF45 /* MapView.swift in Sources */,
+				AA428B2729CE8CF6008EAF45 /* CampgroundImageModel.swift in Sources */,
+				AA428B2929CE8FFF008EAF45 /* CampgroundDetail.swift in Sources */,
+				ACF5E04229BE957F00DD981A /* Campgrounds.swift in Sources */,
 				ACF5E04029BE957F00DD981A /* Assignment3App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
