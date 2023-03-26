@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct CampgroundsResults {
+struct CampgroundsResults : Codable {
     let total : String
     let limit : String
     let start : String
     let data : [CampgroundModel] //This is an array of data
 }
 
-struct CampgroundModel {
+struct CampgroundModel : Codable, Identifiable {
     let id : String
     let name : String
     let parkCode : String
@@ -22,12 +22,8 @@ struct CampgroundModel {
     let reservationInfo : String
     let latitude : String
     let longitude : String
-    let amenities : AmenitiesModel
     let images : [CampgroundImageModel]
 }
 
-struct AmenitiesModel {
-    let showers : String
-    let internetConnectivity : String
-}
+
 

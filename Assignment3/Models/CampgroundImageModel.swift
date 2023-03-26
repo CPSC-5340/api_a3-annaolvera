@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct CampgroundImageModel {
+struct CampgroundImageModel : Codable, Identifiable {
+    var id : String {
+        return title
+    }
     let credit : String
     let title : String
     let altText : String

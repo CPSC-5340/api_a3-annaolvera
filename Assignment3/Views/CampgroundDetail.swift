@@ -6,33 +6,34 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct CampgroundDetail: View {
+    
+    var campground : CampgroundModel
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 12) {
-                Text("Campground Name")
-                    .font(.system(size: 24))
+                Text(campground.name)
+                    .font(.system(size: 28))
                     .padding(.horizontal)
-                MapView()
-                    .frame(height: 300)
-                Text("Description")
+                Text(campground.description)
                     .font(.system(size: 18))
                     .padding(.horizontal)
                 ScrollView(.horizontal) {
                     LazyHGrid(rows: [GridItem()]) {
-                        ImageCardView(url: "https://www.nps.gov/common/uploads/structured_data/30AD9C86-B408-5598-F21072B2495F43BF.jpg")
-                        ImageCardView(url: "https://www.nps.gov/common/uploads/structured_data/30AD9C86-B408-5598-F21072B2495F43BF.jpg")
-                        ImageCardView(url: "https://www.nps.gov/common/uploads/structured_data/30AD9C86-B408-5598-F21072B2495F43BF.jpg")                    }
+                        ForEach(campground.images.prefix(4)) { image in
+                            ImageCardView(url: image.url)
+                        }
+                    }
                 }
                 .padding(.horizontal)
+                MapView(coordinate: CLLocationCoordinate2D(latitude: Double(campground.latitude)!, longitude: Double(campground.longitude)!))
+                    .frame(height: 200)
             }
         }
     }
 }
 
-struct CampgroundDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        CampgroundDetail()
-    }
-}
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA25701029CFC95D0017DBF1 /* CampgroundsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25700F29CFC95D0017DBF1 /* CampgroundsViewModel.swift */; };
 		AA428B2429CE88F3008EAF45 /* CampgroundsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA428B2329CE88F3008EAF45 /* CampgroundsModel.swift */; };
 		AA428B2729CE8CF6008EAF45 /* CampgroundImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA428B2629CE8CF6008EAF45 /* CampgroundImageModel.swift */; };
 		AA428B2929CE8FFF008EAF45 /* CampgroundDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA428B2829CE8FFF008EAF45 /* CampgroundDetail.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA25700F29CFC95D0017DBF1 /* CampgroundsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampgroundsViewModel.swift; sourceTree = "<group>"; };
 		AA428B2329CE88F3008EAF45 /* CampgroundsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampgroundsModel.swift; sourceTree = "<group>"; };
 		AA428B2629CE8CF6008EAF45 /* CampgroundImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampgroundImageModel.swift; sourceTree = "<group>"; };
 		AA428B2829CE8FFF008EAF45 /* CampgroundDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampgroundDetail.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				ACF5E03F29BE957F00DD981A /* Assignment3App.swift */,
+				AA25700F29CFC95D0017DBF1 /* CampgroundsViewModel.swift */,
 				AA428B2529CE8904008EAF45 /* Models */,
 				AA428B2229CE88B4008EAF45 /* Views */,
 				ACF5E04329BE958000DD981A /* Assets.xcassets */,
@@ -172,6 +175,7 @@
 				AA428B2429CE88F3008EAF45 /* CampgroundsModel.swift in Sources */,
 				AA428B2B29CE92A1008EAF45 /* MapView.swift in Sources */,
 				AA428B2729CE8CF6008EAF45 /* CampgroundImageModel.swift in Sources */,
+				AA25701029CFC95D0017DBF1 /* CampgroundsViewModel.swift in Sources */,
 				AA428B2929CE8FFF008EAF45 /* CampgroundDetail.swift in Sources */,
 				ACF5E04229BE957F00DD981A /* Campgrounds.swift in Sources */,
 				ACF5E04029BE957F00DD981A /* Assignment3App.swift in Sources */,
